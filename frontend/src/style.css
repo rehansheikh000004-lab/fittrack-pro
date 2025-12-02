@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0e0e0e;
+  color: white;
+}
+
+.dash {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.add-box input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.add-box button {
+  width: 100%;
+  padding: 12px;
+  background: #ff416c;
+  color: white;
+  border: none;
+}
+
+.workout-list {
+  margin-top: 25px;
+}
+
+.workout-card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
