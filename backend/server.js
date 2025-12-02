@@ -4,6 +4,9 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.js";
 import workoutRoutes from "./routes/workouts.js";
+import analyticsRoutes from "./routes/analytics.js";
+
+app.use("/api/analytics", analyticsRoutes);
 
 dotenv.config();
 const app = express();
@@ -17,6 +20,7 @@ connectDB();
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/workouts", workoutRoutes);
+app.use("/api/analytics", analyticsRoutes);
 
 app.get("/", (req, res) => {
   res.send("FitTrack Pro Backend Running ✔️");
