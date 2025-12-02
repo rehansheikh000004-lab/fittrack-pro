@@ -27,7 +27,7 @@ export default function Analytics() {
 
   useEffect(() => {
     (async () => {
-      const res = await client.get("/api/analytics");
+     const res = await client.get("/api/analytics");
       setData(res.data);
     })();
   }, []);
